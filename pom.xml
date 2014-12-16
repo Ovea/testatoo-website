@@ -1,0 +1,93 @@
+<!--
+
+    Copyright (C) 2014 Ovea (dev@ovea.com)
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+            http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+
+-->
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.testatoo</groupId>
+    <artifactId>website</artifactId>
+    <version>2.0.b1-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <inceptionYear>2014</inceptionYear>
+
+    <scm>
+        <connection>scm:git:git@github.com:Ovea/testatoo-website.git</connection>
+        <developerConnection>scm:git:git@github.com:Ovea/testatoo-website.git</developerConnection>
+        <url>http://github.com/Ovea/testatoo-website</url>
+        <tag>HEAD</tag>
+    </scm>
+
+    <properties>
+        <jdk.version>1.7</jdk.version>
+        <groovy.version>2.3.6</groovy.version>
+        <asciidoctor.version>1.5.0</asciidoctor.version>
+        <jetty.version>9.1.4.v20140401</jetty.version>
+    </properties>
+
+    <developers>
+        <developer>
+            <id>altus34</id>
+            <name>David Avenante</name>
+            <email>d.avenante@ovea.com</email>
+            <organization>Ovea</organization>
+            <organizationUrl>http://www.ovea.com/</organizationUrl>
+            <timezone>-5</timezone>
+            <roles>
+                <role>developer</role>
+            </roles>
+        </developer>
+    </developers>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.eclipse.jetty</groupId>
+                <artifactId>jetty-maven-plugin</artifactId>
+                <version>${jetty.version}</version>
+                <configuration>
+                    <webAppSourceDirectory>www</webAppSourceDirectory>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>com.mycila</groupId>
+                <artifactId>license-maven-plugin</artifactId>
+                <version>2.6</version>
+                <configuration>
+                    <header>com/mycila/maven/plugin/license/templates/APACHE-2.txt</header>
+                    <properties>
+                        <owner>Ovea</owner>
+                        <email>dev@ovea.com</email>
+                    </properties>
+                    <excludes>
+                        <exclude>**/README</exclude>
+                    </excludes>
+                </configuration>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>check</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>
