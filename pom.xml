@@ -62,7 +62,7 @@
                 <artifactId>jetty-maven-plugin</artifactId>
                 <version>${jetty.version}</version>
                 <configuration>
-                    <webAppSourceDirectory>www</webAppSourceDirectory>
+                    <webAppSourceDirectory>${basedir}</webAppSourceDirectory>
                 </configuration>
             </plugin>
             <plugin>
