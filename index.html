@@ -35,180 +35,91 @@
 </head>
 <body>
 
-<header class="navbar navbar-default navbar-static-top container-fluid" role="navigation">
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="sr-only"></span><span class="icon-bar"></span><span class="icon-bar"></span><span
-                    class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="/">
-                <img src="img/icon.svg"></i> Testatoo
-            </a>
+<header></header>
+
+<section id="home" class="container-fluid">
+    <div class="row branding">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+            <img class="logo" src="img/logo.svg">
         </div>
-        <div class="navbar-collapse collapse">
-            <ul id="menu" class="nav navbar-nav navbar-right">
-                <li><a href="home">Home</a></li>
-                <li><a href="learn">Learn</a></li>
-                <li><a href="documentation">Documentation</a></li>
-                <li><a href="download">Download</a></li>
-            </ul>
-        </div>
+        <div class="col-md-2"></div>
     </div>
-</header>
-
-<div>
-    <div class="container-fluid">
-        <section id="home">
-            <div class="row branding">
-                <div class="col-md-2"></div>
-                <div class="col-md-8">
-                    <img class="logo" src="img/logo.svg">
-                </div>
-                <div class="col-md-2"></div>
-            </div>
-            <div class="row">
-                <div class="col-md-2"></div>
-                <div class="col-md-8">
-                    <h1>A Domain-Specific Languages for UI testing</h1>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-md-2"></div>
-                <div class="col-md-8">
-
-                    <p>
-                        <strong>Testatoo</strong> is the result of numerous real-world observations of developers in the
-                        trenches in the area of
-                        <strong>GUI testing</strong>.
-                    </p>
-
-                    <hr/>
-
-                    <p>
-                        Working for many years to promote the <strong>TDD</strong> approaches, we often faced
-                        difficulties
-                        in their
-                        implementation for the graphical layer of applications.
-                    </p>
-
-                    <hr/>
-
-                    <p>
-                        The <strong>"test FIRST"</strong> principle excludes all scenario recorder based approaches that
-                        only allow you to write
-                        a posteriori tests . Our experience has taught us that this path is a dead end (but we reserve
-                        this
-                        for
-                        another discussion...).
-                    </p>
-
-                    <hr/>
-
-                    <p>
-                        An other problem is GUI tests are brittle and costly! We do think that this is due to the lack
-                        of
-                        abstraction in existing UI testing tools.
-                    </p>
-
-                    <hr/>
-
-                    <p>
-                        <strong>Testatoo</strong> provides on one hand an abstraction of the UI business domain through
-                        an
-                        expressive API and on
-                        the other hand a way to express this domain via a <strong>DSL</strong> (a button semantically
-                        stays
-                        a buttons whatever
-                        the technology). With Testatoo you can therefore write tests with a seldom achieved level of
-                        expressiveness and make these tests <strong>INDEPENDENT of the underlying technology</strong>.
-                    </p>
-
-                    <hr/>
-                </div>
-                <div class="col-md-2"></div>
-            </div>
-        </section>
-        <section id="learn">
-            <div class="row">
-                <div class="col-md-2"></div>
-                <div class="col-md-8">
-                    <h1><i class="fa fa-graduation-cap fa-2x"></i>Learn</h1>
-                </div>
-                <div class="col-md-2"></div>
-            </div>
-        </section>
-        <section id="documentation">
-            <div class="row branding">
-                <div class="col-md-2"></div>
-                <div class="col-md-8">
-                    <iframe frameborder="0" width="100%" height="100%" src="https://github.com/Ovea/testatoo/blob/master/src/doc/testatoo.adoc"></iframe>
-                </div>
-                <div class="col-md-2"></div>
-            </div>
-        </section>
-        <section id="download">
-            <div class="row branding">
-                <div class="col-md-2"></div>
-                <div class="col-md-8">
-                    <img class="logo" src="img/logo.svg">
-                </div>
-                <div class="col-md-2"></div>
-            </div>
-        </section>
-    </div>
-</div>
-
-<footer>
     <div class="row">
         <div class="col-md-2"></div>
-        <div class="col-md-5">
-            <div class="row">
-                <div class="col-md-4">
-                    <h1>Testatoo</h1>
-                    <ul>
-                        <li><a href="learn.html">Learn</a></li>
-                        <li><a href="documentation.html">Documentation</a></li>
-                        <li><a href="download.html">Download</a></li>
-                        <li><a href="community.html">Community</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-4">
-                    <h1>About</h1>
-                    <ul>
-                        <li><a href="contribute.html">Contributing</a></li>
-                        <li><a href="https://github.com/Ovea/testatoo">Source code</a></li>
-                        <li><a href="https://drone.io/github.com/Ovea/testatoo">Build status</a></li>
-                        <li><a href="faq.html">FAQ</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-4">
-                    <h1>Socialize</h1>
-                    <ul>
-                        <li><a href="https://groups.google.com/forum/#!forum/testatoo-ui">Discuss on the
-                            mailing-list</a></li>
-                        <li><a href="https://twitter.com/hashtag/groovylang">Testatoo on Twitter</a></li>
-                        <li><a href="https://github.com/Ovea/testatoo">Source code on GitHub</a></li>
-                        <li><a href="https://github.com/Ovea/testatoo/issues">Report issues</a></li>
-                        <li><a href="https://google.com/+groovy">Google+ Testatoo Page</a></li>
-                        <li><a href="http://bit.ly/g-community">Google+ Testatoo Community</a></li>
-                    </ul>
-                </div>
-
-            </div>
+        <div class="col-md-8">
+            <h1>A Domain-Specific Languages for UI testing</h1>
         </div>
+    </div>
 
-        <div class="col-md-5">
-            <a href="http://www.ovea.com">
-                <img src="img/ovea-logo.png">
-            </a>
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+
+            <p>
+                <strong>Testatoo</strong> is the result of numerous real-world observations of developers in the
+                trenches in the area of
+                <strong>GUI testing</strong>.
+            </p>
+
+            <hr/>
+
+            <p>
+                Working for many years to promote the <strong>TDD</strong> approaches, we often faced
+                difficulties
+                in their
+                implementation for the graphical layer of applications.
+            </p>
+
+            <hr/>
+
+            <p>
+                The <strong>"test FIRST"</strong> principle excludes all scenario recorder based approaches that
+                only allow you to write
+                a posteriori tests . Our experience has taught us that this path is a dead end (but we reserve
+                this
+                for
+                another discussion...).
+            </p>
+
+            <hr/>
+
+            <p>
+                An other problem is GUI tests are brittle and costly! We do think that this is due to the lack
+                of
+                abstraction in existing UI testing tools.
+            </p>
+
+            <hr/>
+
+            <p>
+                <strong>Testatoo</strong> provides on one hand an abstraction of the UI business domain through
+                an
+                expressive API and on
+                the other hand a way to express this domain via a <strong>DSL</strong> (a button semantically
+                stays
+                a buttons whatever
+                the technology). With Testatoo you can therefore write tests with a seldom achieved level of
+                expressiveness and make these tests <strong>INDEPENDENT of the underlying technology</strong>.
+            </p>
+
+            <hr/>
         </div>
+        <div class="col-md-2"></div>
+    </div>
+</section>
 
+<section id="download">
+    <div class="row branding">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+            <img class="logo" src="img/logo.svg">
+        </div>
+        <div class="col-md-2"></div>
     </div>
-    <div class="clearfix">© 2010-2014 the Testatoo project — Testatoo is Open Source,
-        <a href="http://www.apache.org/licenses/LICENSE-2.0.html">Apache 2 License</a>
-    </div>
+</section>
+
+<footer>
 
 </footer>
 
