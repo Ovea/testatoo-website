@@ -25,10 +25,11 @@
 
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="vendors/prism/prism.css" rel="stylesheet">
 
     <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
     <link href="css/testatoo.css" rel="stylesheet">
@@ -39,11 +40,38 @@
 
 <section id="download" class="container-fluid">
     <div class="row">
-        <div class="col-md-2"></div>
-        <div class="col-md-8">
-            <h1><i class="fa fa-cloud-download fa-1x"></i>Download</h1>
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
+            <h1><i class="fa fa-cloud-download fa-2x"></i>Download</h1>
+
+            <button id="big-download-button"
+                    type="button"
+                    class="btn btn-default"
+                    title="Download Testatoo"
+                    onclick="window.location.href=&quot;http://repo1.maven.org/maven2/org/testatoo/testatoo/2.0.b1/testatoo-2.0.b1.jar &quot;"><i class="fa fa-download"></i>Download</button>
+            <article>
+                <p>In this download area, you will be able to download the distribution (binary and source).</p>
+
+                <hr/>
+
+                <h2>Maven repository</h2>
+
+                <p>Testatoo releases are downloadable from <a href="http://repo1.maven.org/maven2/org/testatoo/testatoo/">Maven Central.</a></p>
+
+                <p>If you wish to add Testatoo as a dependency in your projects, you can refer to the Testatoo JARs in the dependency section of your project build file descriptor:</p>
+
+                <hr/>
+
+                <pre class="language-markup">
+                    &lt;dependency&gt;
+                        &lt;groupId&gt;org.testatoo&lt;/groupId&gt;
+                        &lt;artifactId&gt;testatoo&lt;/artifactId&gt;
+                        &lt;version&gt;x.y.z&lt;/version&gt;
+                    &lt;dependency&gt;</pre>
+
+            </article>
         </div>
-        <div class="col-md-2"></div>
+        <div class="col-md-3"></div>
     </div>
 </section>
 
@@ -51,6 +79,9 @@
 
 <script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
+<script src="vendors/prism/prism.js"></script>
+
 <script src="js/testatoo.js"></script>
 </body>
 </html>

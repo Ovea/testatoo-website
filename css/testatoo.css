@@ -46,6 +46,18 @@ html {
     font-size: 3em;
 }
 
+i {
+    padding-right: 0.2em;
+}
+
+article {
+    font-size: 1.5em;
+}
+
+pre[class*="language-"] {
+    font-size: 0.8em;
+}
+
 .navbar {
     margin-bottom: 0;
     background-color: #222222;
@@ -122,4 +134,19 @@ footer {
     padding: 20px 0px 30px;
     margin-top: 30px;
     color: #AAA;
+}
+
+#big-download-button:hover {
+    background-color: #E6E6E6;
+    color: #DB4800;
+}
+#big-download-button {
+    float: right;
+    font-size: 30px;
+    padding: 15px;
+    margin: 10px 0px 10px 20px;
+    border: 2px solid #DB4800;
+    border-radius: 6px;
+    background-color: #DB4800;
+    color: #FFF;
 }
