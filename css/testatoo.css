@@ -44,6 +44,7 @@ html {
     line-height: 2em;
     font-weight: normal;
     font-size: 3em;
+    height: 100%;
 }
 
 i {
@@ -52,6 +53,10 @@ i {
 
 article {
     font-size: 1.5em;
+}
+
+iframe {
+    width: 100%;
 }
 
 pre[class*="language-"] {
