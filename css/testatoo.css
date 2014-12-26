@@ -52,7 +52,9 @@ i {
 }
 
 article {
-    font-size: 1.5em;
+    font-size: 1.2em;
+    color: #3E4349;
+    line-height: 1.3em;
 }
 
 iframe {
