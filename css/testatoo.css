@@ -19,18 +19,21 @@
     font-weight: 400;
     src: url(http://fonts.gstatic.com/s/opensans/v10/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
 }
+
 @font-face {
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 600;
     src: url(http://fonts.gstatic.com/s/opensans/v10/MTP_ySUJH_bn48VBG8sNSnhCUOGz7vYGh680lGh-uXM.woff) format('woff');
 }
+
 @font-face {
     font-family: 'Source Code Pro';
     font-style: normal;
     font-weight: 500;
     src: url(http://fonts.gstatic.com/s/sourcecodepro/v6/leqv3v-yTsJNC7nFznSMqe_puumMoxhiakHfBfLgHWs.woff) format('woff');
 }
+
 @font-face {
     font-family: 'Source Code Pro';
     font-style: normal;
@@ -72,13 +75,14 @@ pre[class*="language-"] {
 }
 
 .navbar-default .navbar-nav > li > a {
-    color: #FFFFFF; !important;
+    color: #FFFFFF;
+!important;
     font-size: 1.5em;
 }
 
-
 .navbar-default .navbar-nav > li > a {
-    color: #FFFFFF; !important;
+    color: #FFFFFF;
+!important;
     font-size: 1.5em;
 }
 
@@ -135,18 +139,27 @@ pre[class*="language-"] {
 }
 
 footer {
-    background: none repeat scroll 0% 0% #F2F2F2;
+    background: none repeat scroll 0 0 #F2F2F2;
     text-align: center;
     font-size: 14px;
-    padding: 20px 0px 30px;
+    padding: 20px 0 30px;
     margin-top: 30px;
     color: #AAA;
+}
+
+footer h1 {
+    text-align: left;
+}
+
+footer ul {
+    text-align: left;
 }
 
 #big-download-button:hover {
     background-color: #E6E6E6;
     color: #DB4800;
 }
+
 #big-download-button {
     float: right;
     font-size: 30px;
