@@ -63,11 +63,27 @@
                 <hr/>
 
                 <pre class="language-markup">
-                    &lt;dependency&gt;
-                        &lt;groupId&gt;org.testatoo&lt;/groupId&gt;
-                        &lt;artifactId&gt;testatoo&lt;/artifactId&gt;
-                        &lt;version&gt;x.y.z&lt;/version&gt;
-                    &lt;dependency&gt;</pre>
+
+                &lt;dependency&gt;
+                    &lt;groupId&gt;org.testatoo&lt;/groupId&gt;
+                    &lt;artifactId&gt;testatoo&lt;/artifactId&gt;
+                    &lt;version&gt;{testaoo-version}&lt;/version&gt;
+                    &lt;scope&gt;test&lt;/scope&gt;
+                &lt;/dependency&gt;
+                &lt;dependency&gt;
+                    &lt;groupId&gt;junit&lt;/groupId&gt;
+                    &lt;artifactId&gt;junit&lt;/artifactId&gt;
+                    &lt;version&gt;4.11&lt;/version&gt;
+                    &lt;scope&gt;test&lt;/scope&gt;
+                &lt;/dependency&gt;
+                &lt;dependency&gt;
+                    &lt;groupId&gt;org.seleniumhq.selenium&lt;/groupId&gt;
+                    &lt;artifactId&gt;selenium-java&lt;/artifactId&gt;
+                    &lt;version&gt;{always-the-latest}&lt;/version&gt;
+                    &lt;scope&gt;test&lt;/scope&gt;
+                &lt;/dependency&gt;
+
+                </pre>
 
             </article>
         </div>
