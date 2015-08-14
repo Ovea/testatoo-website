@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Testatoo - A testing tool for modern web development</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="description"
-          content="A lightning-fast testing tool for modern web development.">
-    <link rel="stylesheet" href="css/testatoo.css">
-    <link rel="shortcut icon" href="img/icon.jpg">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Testatoo - A testing tool for modern web development</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description"
+        content="A lightning-fast testing tool for modern web development.">
+  <link rel="stylesheet" href="css/testatoo.css">
+  <link rel="shortcut icon" href="img/icon.jpg">
 </head>
 
 <body class="index-page" data-spy="scroll" data-target=".left-nav" data-offset="90">
@@ -40,21 +40,69 @@
       <h2>a testing tool for modern web development</h2></div>
     <div class="intro-header__buttons"><a href="./started.html" class="btn btn-primary btn-lg start-button">Get
       Started</a></div>
-
-
     <h1>Work in progress</h1>
   </div>
 </header>
 
+<div class="container-fluid features why">
+  <h1>Why Testatoo?</h1>
+  <hr class="small">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 col-sm-6">
+        <div class="feature"><h3>TDD,<br>Test first</h3>
+
+          <p><span class="glyphicon glyphicon-flash" aria-hidden="true"></span></p>
+
+          <p>Many other build tools have to make repeated reads and writes to process a single file. Mimosa reads and
+            writes once.</p></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid">
+  <footer>
+    <div class="container">
+      <ul>
+        <li>
+          <iframe class="github-btn"
+                  src="http://ghbtns.com/github-btn.html?user=ovea&repo=testatoo&type=watch&count=true"
+                  allowtransparency="true" frameborder="0" scrolling="0" width="112px" height="20px"></iframe>
+        </li>
+        <li>
+          <iframe class="github-btn"
+                  src="http://ghbtns.com/github-btn.html?user=ovea&repo=testatoo&type=fork&count=true"
+                  allowtransparency="true" frameborder="0" scrolling="0" width="98px" height="20px"></iframe>
+        </li>
+      </ul>
+      <ul>
+        <li>Current Version v2.0.b21</li>
+        <li>-</li>
+        <li><a href="https://github.com/ovea/testatoo">GitHub</a></li>
+        <li>-</li>
+        <li><a href="https://github.com/ovea/testatoo/issues">Issues</a></li>
+        <li>-</li>
+        <li><a href="https://gitter.im/Ovea/testatoo">Chat</a></li>
+      </ul>
+    </div>
+  </footer>
+</div>
 
 <script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-
 <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  (function(i, s, o, g, r, a, m) {
+    i['GoogleAnalyticsObject'] = r;
+    i[r] = i[r] || function() {
+          (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+    a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+    a.async = 1;
+    a.src = g;
+    m.parentNode.insertBefore(a, m)
+  })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
   ga('create', 'UA-58443041-1', 'auto');
   ga('send', 'pageview');
@@ -63,92 +111,50 @@
 
 
 
-<!--<!DOCTYPE html>-->
-<!--<html lang="en">-->
-<!--<head>-->
-    <!--<meta charset="utf-8">-->
-    <!--<meta http-equiv="X-UA-Compatible" content="IE=edge">-->
-    <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
-    <!--<title>Testatoo</title>-->
+<!--<p>-->
+<!--<strong>Testatoo</strong> is the result of numerous real-world observations of developers in the-->
+<!--trenches in the area of-->
+<!--<strong>GUI testing</strong>.-->
+<!--</p>-->
 
-    <!--<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">-->
-    <!--<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">-->
-    <!--<link href="vendors/prism/prism.css" rel="stylesheet">-->
+<!--<hr/>-->
 
-    <!--&lt;!&ndash;[if lt IE 9]>-->
-    <!--<script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>-->
-    <!--<script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>-->
-    <!--<![endif]&ndash;&gt;-->
+<!--<p>-->
+<!--Working for many years to promote the <strong>TDD</strong> approaches, we often faced-->
+<!--difficulties-->
+<!--in their-->
+<!--implementation for the graphical layer of applications.-->
+<!--</p>-->
 
-    <!--<link href="css/testatoo.css" rel="stylesheet">-->
-<!--</head>-->
-<!--<body>-->
+<!--<hr/>-->
 
-<!--<header></header>-->
+<!--<p>-->
+<!--The <strong>"TEST FIRST"</strong> principle excludes all scenario recorder based approaches that-->
+<!--only allow you to write a posteriori tests. Our experience has taught us that this path is a dead end-->
+<!--(but we reserve this for another discussion...).-->
+<!--</p>-->
 
-<!--<section id="home" class="container-fluid">-->
-    <!--<div class="row branding">-->
-        <!--<div class="col-md-2"></div>-->
-        <!--<div class="col-md-8">-->
-            <!--<img class="logo" src="img/logo.svg">-->
-        <!--</div>-->
-        <!--<div class="col-md-2"></div>-->
-    <!--</div>-->
-    <!--<div class="row">-->
-        <!--<div class="col-md-2"></div>-->
-        <!--<div class="col-md-8">-->
-            <!--<h1>A Domain-Specific Language for UI testing</h1>-->
-        <!--</div>-->
-    <!--</div>-->
+<!--<hr/>-->
 
-    <!--<div class="row">-->
-        <!--<div class="col-md-2"></div>-->
-        <!--<div class="col-md-8">-->
+<!--<p>-->
+<!--Another problem is GUI tests are brittle and costly! We do think that this is due to the lack-->
+<!--of abstraction in existing UI testing tools.-->
+<!--</p>-->
 
-            <!--<p>-->
-                <!--<strong>Testatoo</strong> is the result of numerous real-world observations of developers in the-->
-                <!--trenches in the area of-->
-                <!--<strong>GUI testing</strong>.-->
-            <!--</p>-->
+<!--<hr/>-->
 
-            <!--<hr/>-->
+<!--<p>-->
+<!--<strong>Testatoo</strong> provides on one hand an abstraction of the UI business domain through-->
+<!--an expressive API and, on the other hand, a way to express this domain via a <strong>DSL</strong>-->
+<!--(a button semantically stays a button whatever is the technology). With Testatoo you can therefore-->
+<!--write tests with a seldom achieved level of expressiveness and make these tests-->
+<!--<strong>INDEPENDENT of the underlying technology</strong>.-->
+<!--</p>-->
 
-            <!--<p>-->
-                <!--Working for many years to promote the <strong>TDD</strong> approaches, we often faced-->
-                <!--difficulties-->
-                <!--in their-->
-                <!--implementation for the graphical layer of applications.-->
-            <!--</p>-->
-
-            <!--<hr/>-->
-
-            <!--<p>-->
-                <!--The <strong>"TEST FIRST"</strong> principle excludes all scenario recorder based approaches that-->
-                <!--only allow you to write a posteriori tests. Our experience has taught us that this path is a dead end-->
-                <!--(but we reserve this for another discussion...).-->
-            <!--</p>-->
-
-            <!--<hr/>-->
-
-            <!--<p>-->
-                <!--Another problem is GUI tests are brittle and costly! We do think that this is due to the lack-->
-                <!--of abstraction in existing UI testing tools.-->
-            <!--</p>-->
-
-            <!--<hr/>-->
-
-            <!--<p>-->
-                <!--<strong>Testatoo</strong> provides on one hand an abstraction of the UI business domain through-->
-                <!--an expressive API and, on the other hand, a way to express this domain via a <strong>DSL</strong>-->
-                <!--(a button semantically stays a button whatever is the technology). With Testatoo you can therefore-->
-                <!--write tests with a seldom achieved level of expressiveness and make these tests-->
-                <!--<strong>INDEPENDENT of the underlying technology</strong>.-->
-            <!--</p>-->
-
-            <!--<hr/>-->
-        <!--</div>-->
-        <!--<div class="col-md-2"></div>-->
-    <!--</div>-->
+<!--<hr/>-->
+<!--</div>-->
+<!--<div class="col-md-2"></div>-->
+<!--</div>-->
 <!--</section>-->
 
 <!--<footer>-->
