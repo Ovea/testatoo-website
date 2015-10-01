@@ -22,7 +22,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.testatoo</groupId>
-    <artifactId>website</artifactId>
+    <artifactId>testatoo-website</artifactId>
     <version>2.0.b1-SNAPSHOT</version>
     <packaging>pom</packaging>
     <inceptionYear>2014</inceptionYear>
