@@ -4,7 +4,7 @@
 
 body {
     -webkit-font-smoothing: antialiased;
-    letter-spacing: .1px;
+    letter-spacing: 1px;
     background-color: #f7f7f7;
     text-rendering: optimizeLegibility;
     font-size: 16px;
@@ -91,6 +91,10 @@ body {
 }
 
 .sponsors-section h2 {
+    color: white;
+}
+
+.sponsors-section h3 {
     color: white;
 }
 
