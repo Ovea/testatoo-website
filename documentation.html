@@ -5,68 +5,65 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <title>Documentation - Testatoo</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description"
-        content="Documentation">
+  <meta name="description" content="Documentation">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel="stylesheet" href="css/site.css">
   <link rel="shortcut icon" href="img/icon.jpg">
 </head>
 <body class="started-page" data-spy="scroll" data-target=".left-nav" data-offset="90">
-<nav class="navbar navbar-inverse navbar-fixed-top">
+
+<nav class="navbar navbar-inverse navbar-fixed-top navbar-right" role="navigation">
   <div class="container">
-
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#site-navbar"><span
-          class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span
-          class="icon-bar"></span></button>
-      <a class="navbar-brand" href="./index.html">Testatoo</a>
+      <a class="navbar-brand" href=".">
+        <img src="img/icon.svg" class="project-icon" alt="Testatoo Icon"/>
+      </a>
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#site-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
     </div>
-
     <div id="site-navbar" class="collapse navbar-collapse">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="./documentation.html">Documentation</a></li>
-        <li><a href="./bundles.html">Bundles</a></li>
-        <li><a href="./extend.html">Extend</a></li>
-        <li><a href="./about.html">FAQ/Tips</a></li>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="./documentation.html">Documentation</a></li>
       </ul>
     </div>
   </div>
 </nav>
 
 <div class="container-fluid">
-  <header class="jumbotron">
-    <div class="container">
-      <h1>Documentation</h1>
-
-      <p class="lead">The Testatoo documentation</p>
-    </div>
-  </header>
-</div>
-
-<div class="container-fluid">
   <style>iframe{width:100%}</style>
-  <iframe id="doc" src="doc/doc.html" scrolling="no" marginheight="0" frameborder="0" onLoad="autoResize('doc')">
+  <iframe id="doc" src="doc/index.html" scrolling="no" marginheight="0" frameborder="0" onLoad="autoResize('doc')" style="margin-top: 3em">
   </iframe>
   <script>iFrameResize({log: true, heightCalculationMethod: 'documentElementScroll'})</script>
 </div>
 
-<div class="container-fluid">
-  <footer>
-    <div class="container">
-      <ul>
-        <li>Current Version v2.0.b21</li>
-        <li>-</li>
-        <li><a href="https://github.com/ovea/testatoo">GitHub</a></li>
-        <li>-</li>
-        <li><a href="https://github.com/ovea/testatoo/issues">Issues</a></li>
-        <li>-</li>
-        <li><a href="https://gitter.im/Ovea/testatoo">Chat</a></li>
-      </ul>
+<footer>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <ul class="list-inline center-block text-cente" style="margin-top: 2em">
+          <li><span>Current Version v2.0.b21</span></li>
+          <li>-</li>
+          <li>
+            <a target="_blank" href="https://github.com/ovea/testatoo" title="Github Repository">
+              <img src="img/github.png">
+              <span>Github Repository</span>
+          <li>-</li>
+          <li><a target="_blank" href="https://github.com/ovea/testatoo/issues">Issues</a></li>
+          <li>-</li>
+          <li><a target="_blank" href="https://gitter.im/Ovea/testatoo">Chat</a></li>
+        </ul>
+      </div>
     </div>
-  </footer>
-</div>
+  </div>
+</footer>
 
-<script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="vendors/iframeResizer.contentWindow.min.js"></script>
 <script src="vendors/iframeResizer.min.js"></script>
 <script language="JavaScript">
@@ -84,22 +81,24 @@
   }
 </script>
 
-<script>
-  (function(i, s, o, g, r, a, m) {
-    i['GoogleAnalyticsObject'] = r;
-    i[r] = i[r] || function() {
-          (i[r].q = i[r].q || []).push(arguments)
-        }, i[r].l = 1 * new Date();
-    a = s.createElement(o),
-        m = s.getElementsByTagName(o)[0];
-    a.async = 1;
-    a.src = g;
-    m.parentNode.insertBefore(a, m)
-  })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
-  ga('create', 'UA-58443041-1', 'auto');
-  ga('send', 'pageview');
+<script>
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-58443041-1', 'auto');
+    ga('send', 'pageview');
 </script>
+
 
 </body>
 </html>
