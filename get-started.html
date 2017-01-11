@@ -36,7 +36,7 @@
 
 <div class="container-fluid">
   <style>iframe{width:100%}</style>
-  <iframe id="doc" src="doc/testatoo.html" scrolling="no" marginheight="0" frameborder="0" onLoad="autoResize('doc')" style="margin-top: 3em">
+  <iframe id="doc" src="doc/get-started.html" scrolling="no" marginheight="0" frameborder="0" onLoad="autoResize('doc')" style="margin-top: 3em">
   </iframe>
   <script>iFrameResize({log: true, heightCalculationMethod: 'documentElementScroll'})</script>
 </div>
@@ -67,18 +67,18 @@
 <script src="vendors/iframeResizer.contentWindow.min.js"></script>
 <script src="vendors/iframeResizer.min.js"></script>
 <script language="JavaScript">
-  function autoResize(id){
-    var newheight;
-    var newwidth;
+    function autoResize(id){
+        var newheight;
+        var newwidth;
 
-    if(document.getElementById){
-      newheight=document.getElementById(id).contentWindow.document .body.scrollHeight;
-      newwidth=document.getElementById(id).contentWindow.document .body.scrollWidth;
+        if(document.getElementById){
+            newheight=document.getElementById(id).contentWindow.document .body.scrollHeight;
+            newwidth=document.getElementById(id).contentWindow.document .body.scrollWidth;
+        }
+
+        document.getElementById(id).height= (newheight) + "px";
+        document.getElementById(id).width= (newwidth) + "px";
     }
-
-    document.getElementById(id).height= (newheight) + "px";
-    document.getElementById(id).width= (newwidth) + "px";
-  }
 </script>
 
 

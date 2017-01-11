@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="generator" content="Asciidoctor 1.5.3">
+  <meta name="author" content="David Avenante, Stephanie Parisot">
+  <title>Testatoo Getting Started</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
+  <link rel="stylesheet" href="./asciidoctor.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./coderay-asciidoctor.css">
+</head>
+<body class="book toc2 toc-left">
+<div id="header">
+  <h1>Testatoo Getting Started</h1>
+  <div class="details">
+    <span id="author" class="author">David Avenante, Stephanie Parisot</span><br>
+    <span id="revnumber">version 2.0.b26</span>
+  </div>
+  <div id="toc" class="toc2">
+    <div id="toctitle">Table of Contents</div>
+    <ul class="sectlevel1">
+      <li><a href="#_introduction">1. Introduction</a></li>
+      <li><a href="#_installation">2. Installation</a>
+        <ul class="sectlevel2">
+          <li><a href="#_run_with_locale_chrome">2.1. Run with locale Chrome</a></li>
+          <li><a href="#_run_with_remote_chrome">2.2. Run with remote Chrome</a></li>
+        </ul>
+      </li>
+      <li><a href="#_philosophy">Philosophy</a></li>
+    </ul>
+  </div>
+</div>
+<div id="content">
+  <div id="preamble">
+    <div class="sectionbody">
+      <div class="imageblock" style="text-align: center">
+        <div class="content">
+          <img src="images/logo.svg" alt="Testatoo">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="sect1">
+    <h2 id="_introduction">1. Introduction</h2>
+    <div class="sectionbody">
+      <hr>
+      <div class="paragraph">
+        <p>The main purpose of this tutorial is to give you the way and the philosophy under Testatoo.
+          As explained in the full documentation Testatoo is a strongly opinionated tool.</p>
+      </div>
+      <div class="paragraph">
+        <p>We take care through this tutorial to give you a full vision of the Testatoo way.</p>
+      </div>
+    </div>
+  </div>
+  <div class="sect1">
+    <h2 id="_installation">2. Installation</h2>
+    <div class="sectionbody">
+      <hr>
+      <div class="paragraph">
+        <p>Clone the <a href="https://github.com/Ovea/testatoo-starter" target="_blank">Testatoo Starter</a> sample from github.</p>
+      </div>
+      <div class="paragraph">
+        <p>As you can see it&#8217;s a simple Java/Groovy/Maven project setup. The pom just import necessary libraries</p>
+      </div>
+      <div class="listingblock">
+        <div class="content">
+<pre class="CodeRay highlight"><code data-lang="xml"><span class="tag">&lt;dependency&gt;</span>
+    <span class="tag">&lt;groupId&gt;</span>junit<span class="tag">&lt;/groupId&gt;</span>
+    <span class="tag">&lt;artifactId&gt;</span>junit<span class="tag">&lt;/artifactId&gt;</span>
+    <span class="tag">&lt;version&gt;</span>4.12<span class="tag">&lt;/version&gt;</span>
+    <span class="tag">&lt;scope&gt;</span>test<span class="tag">&lt;/scope&gt;</span>
+<span class="tag">&lt;/dependency&gt;</span>
+<span class="tag">&lt;dependency&gt;</span>
+   <span class="tag">&lt;groupId&gt;</span>org.testatoo<span class="tag">&lt;/groupId&gt;</span>
+   <span class="tag">&lt;artifactId&gt;</span>testatoo<span class="tag">&lt;/artifactId&gt;</span>
+   <span class="tag">&lt;version&gt;</span>2.0.b26<span class="tag">&lt;/version&gt;</span>
+   <span class="tag">&lt;scope&gt;</span>test<span class="tag">&lt;/scope&gt;</span>
+<span class="tag">&lt;/dependency&gt;</span></code></pre>
+        </div>
+      </div>
+      <div class="paragraph">
+        <p>Testatoo is build on top of Selenium 3: definitively turned to the future.</p>
+      </div>
+      <div class="sect2">
+        <h3 id="_run_with_locale_chrome">2.1. Run with locale Chrome</h3>
+        <div class="olist arabic">
+          <ol class="arabic">
+            <li>
+              <p>Install <a href="https://www.google.com/chrome/" target="_blank">Google chrome</a></p>
+            </li>
+            <li>
+              <p>Install the driver <a href="https://sites.google.com/a/chromium.org/chromedriver/">Chrome Driver</a></p>
+            </li>
+            <li>
+              <p>Run the test with <strong>mvn test -Ddriver='your driver location'</strong>  (by default <strong>/usr/bin</strong>)</p>
+            </li>
+          </ol>
+        </div>
+      </div>
+      <div class="sect2">
+        <h3 id="_run_with_remote_chrome">2.2. Run with remote Chrome</h3>
+        <div class="paragraph">
+          <p>Nobody love to be bored by a browser who pop when he run a test.
+            It&#8217;s a good practice in development to use a remote dockerised browser.</p>
+        </div>
+        <div class="olist arabic">
+          <ol class="arabic">
+            <li>
+              <p>Install <a href="https://docs.docker.com/engine/installation/" target="_blank">Docker</a></p>
+            </li>
+            <li>
+              <p>Run the docker container: <strong>docker run -d -p 4444:4444 selenium/standalone-chrome:3.0.1-aluminum</strong></p>
+            </li>
+            <li>
+              <p>Run the test with <strong>mvn test -Ddocker</strong></p>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+  <h1 id="_philosophy" class="sect0">Philosophy</h1>
+  <div class="openblock partintro">
+    <div class="content">
+      <hr>
+      <div class="paragraph">
+        <p>Now take a look on the test.</p>
+      </div>
+      <div class="listingblock">
+        <div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><table class="CodeRay"><tr>
+  <td class="line-numbers"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+</pre></td>
+  <td class="code"><pre><span class="keyword">package</span> starter
+
+<span class="keyword">import</span> <span class="include">org.junit.Before</span>
+<span class="keyword">import</span> <span class="include">org.junit.ClassRule</span>
+<span class="keyword">import</span> <span class="include">org.junit.Test</span>
+<span class="keyword">import</span> <span class="include">org.junit.runner.RunWith</span>
+<span class="keyword">import</span> <span class="include">org.junit.runners.JUnit4</span>
+<span class="keyword">import</span> <span class="include">org.testatoo.core.component.Item</span>
+<span class="keyword">import</span> <span class="include">starter.config.WebDriverConfig</span>
+
+<span class="keyword">import</span> <span class="include">static</span> <span class="include">starter.component.Factory.*</span>
+<span class="keyword">import</span> <span class="include">static</span> <span class="include">org.testatoo.core.Testatoo.*</span>
+<span class="keyword">import</span> <span class="include">static</span> <span class="include">org.testatoo.core.input.Key.RETURN</span>
+
+<span class="annotation">@RunWith</span>(JUnit4)
+<span class="type">class</span> <span class="class">GoogleSearchTest</span> {
+
+    <span class="annotation">@ClassRule</span>
+    <span class="directive">public</span> <span class="directive">static</span> WebDriverConfig driver = <span class="keyword">new</span> WebDriverConfig() <i class="conum" data-value="1"></i><b>(1)</b>
+
+    <span class="annotation">@Before</span>
+    <span class="type">void</span> setup() {
+        visit <span class="string"><span class="delimiter">'</span><span class="content">http://www.google.ca</span><span class="delimiter">'</span></span>
+    }
+
+    <span class="annotation">@Test</span>
+    <span class="type">void</span> simple_search_test() {
+        searchField.should { be visible }
+        resultList.should { be missing }    <i class="conum" data-value="2"></i><b>(2)</b>
+
+        fill searchField with <span class="string"><span class="delimiter">'</span><span class="content">groovy</span><span class="delimiter">'</span></span>      <i class="conum" data-value="3"></i><b>(3)</b>
+        type RETURN
+
+        resultList.should { be visible }
+
+        Item item = resultList.items()[<span class="integer">0</span>]
+        item.should {
+            have title(<span class="string"><span class="delimiter">'</span><span class="content">The Groovy programming language</span><span class="delimiter">'</span></span>)
+            have reference(<span class="string"><span class="delimiter">'</span><span class="content">http://www.groovy-lang.org/</span><span class="delimiter">'</span></span>)
+        }
+    }
+}</pre></td>
+</tr></table></code></pre>
+        </div>
+      </div>
+      <div class="colist arabic">
+        <table>
+          <tr>
+            <td><i class="conum" data-value="1"></i><b>1</b></td>
+            <td>Always externalise the Webdriver configuration. Here we added a JUnit class rule to manage the Webdriver
+              configuration and lifecycle (see source for details).</td>
+          </tr>
+          <tr>
+            <td><i class="conum" data-value="2"></i><b>2</b></td>
+            <td>As possible use a factory to fetch your UI component</td>
+          </tr>
+          <tr>
+            <td><i class="conum" data-value="3"></i><b>3</b></td>
+            <td>Look how it&#8217;s easy in Testatoo to fill fields</td>
+          </tr>
+        </table>
+      </div>
+      <div class="paragraph">
+        <p>Ok now take a closer look on the test. The goal of the test is simple: <strong>open google and search for GROOVY</strong>.</p>
+      </div>
+      <div class="paragraph">
+        <p>Here what we want is simple.</p>
+      </div>
+      <div class="olist arabic">
+        <ol class="arabic">
+          <li>
+            <p><strong>GIVEN</strong> the search field is visible and the result list is not here.</p>
+          </li>
+          <li>
+            <p><strong>WHEN</strong> we enter the word groovy in the search field and press enter</p>
+          </li>
+          <li>
+            <p><strong>THEN</strong> we expect that the result list is here and contain a result with the expected item.</p>
+          </li>
+        </ol>
+      </div>
+      <div class="admonitionblock note">
+        <table>
+          <tr>
+            <td class="icon">
+              <i class="fa icon-note" title="Note"></i>
+            </td>
+            <td class="content">
+              A test is an intention and need to express an intention.
+              Testatoo is build around this idea. Write a test the more
+              abstract possible who capture the intention.
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="paragraph">
+        <p>What is the <strong>searchFile</strong>? The search field is, in this case, a simple HTML5 input text field. But we don&#8217;t
+          want to use it as a detail (as a InputTypeText) but through it&#8217;s abstraction: A <strong>TextField</strong>.</p>
+      </div>
+      <div class="paragraph">
+        <p>What is the <strong>resultList</strong>? Hummm it&#8217;s more complicated here. In fact it&#8217;s a list of items. Pretty close of
+          what you can find in HTML5 with UL/LI or OL/LI tags. But in this case it&#8217;s a soup of div of div.</p>
+      </div>
+      <div class="paragraph">
+        <p>All this details are hidden in the Factory class.</p>
+      </div>
+      <div class="listingblock">
+        <div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><table class="CodeRay"><tr>
+  <td class="line-numbers"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+</pre></td>
+  <td class="code"><pre><span class="keyword">package</span> starter.component
+
+<span class="keyword">import</span> <span class="include">org.testatoo.bundle.html5.input.InputTypeText</span>
+<span class="keyword">import</span> <span class="include">org.testatoo.core.component.ListView</span>
+<span class="keyword">import</span> <span class="include">org.testatoo.core.component.field.TextField</span>
+
+<span class="keyword">import</span> <span class="include">static</span> <span class="include">org.testatoo.core.Testatoo</span>.<span class="error">$</span>
+
+<span class="type">class</span> <span class="class">Factory</span> {
+
+    <span class="directive">static</span> <span class="predefined-type">TextField</span> getSearchField() {
+        <span class="error">$</span>(<span class="string"><span class="delimiter">'</span><span class="content">#lst-ib</span><span class="delimiter">'</span></span>) <span class="keyword">as</span> InputTypeText   <span class="comment">// 1</span>
+    }
+
+    <span class="directive">static</span> <span class="predefined-type">ListView</span> getResultList() {
+        <span class="error">$</span>(<span class="string"><span class="delimiter">'</span><span class="content">#rso</span><span class="delimiter">'</span></span>) <span class="keyword">as</span> GoogleListView     <span class="comment">// 2</span>
+    }
+
+}</pre></td>
+</tr></table></code></pre>
+        </div>
+      </div>
+      <div class="paragraph">
+        <p>If the implementation of your application change the test stay the same you just need to update the factory.
+          In Testatoo everything is a Component. Testatoo provide you the HTML5 bundle with all the HTML5 Component.
+          But more important Testatoo give you the possibility to create you own component.</p>
+      </div>
+      <div class="paragraph">
+        <p>This is the cas here we create two component:
+          GoogleListView</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="footer">
+  <div id="footer-text">
+    Version 2.0.b26<br>
+    Last updated 2017-01-11 09:14:57 EST
+  </div>
+</div>
+</body>
+</html>

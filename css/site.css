@@ -49,6 +49,7 @@ body {
 }
 
 .features-section {
+    background-image: linear-gradient(90deg, #517fa4 10%, #243949 90%);
     margin-top: 2em;
 }
 
@@ -61,7 +62,11 @@ body {
     text-align: center;
 }
 
-.features-section h2, .features-section a {
+.features-section h2 {
+    color: white;
+}
+
+.features-section a {
     color: #df691a;
 }
 
@@ -81,21 +86,13 @@ body {
     height: 250px;
 }
 
-.sponsors-section {
-    background-image: linear-gradient(90deg, #517fa4 10%, #243949 90%);
-}
-
 .sponsors-section div {
     text-align: center;
     max-width: 800px;
 }
 
-.sponsors-section h2 {
-    color: white;
-}
-
-.sponsors-section h3 {
-    color: white;
+.sponsors-section h2, .sponsors-section h3 {
+    color: #df691a;
 }
 
 .sponsors-section img {
