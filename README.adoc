@@ -1,6 +1,4 @@
-testatoo-website
+Testatoo Website
 ================
 
-The documentation is generated from asciidoc file in testatoo source (doc folder) with the commend line :
-
-asciidoc -b html5 -a icons -a toc2 -a theme=flask testatoo.adoc
+The Website of  http://www.testatoo.org[Testatoo]
